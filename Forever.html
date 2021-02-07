@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Forever login page</title>
+
+	      <script src="dist/sweetalert.min.js"></script>
+	<style>
+    
+    * {
+    	text-align: center;
+
+    
+    }
+    form {
+    	text-align: center ;
+    	background-color: grey;
+    	border: 10px solid black;
+    	color: black;
+    	display: inline-block;
+    	margin: 70px;
+    	width: 800px;
+
+    }
+
+ input {
+ 	background-color: white;
+ 	border: 1px solid black;
+
+ }
+  button:hover {
+  	background-color: pink;
+  	color: purple;
+  }
+  button {
+  	border: 1.75px solid black;
+  }
+  select {
+  	border: 1px solid black;
+  }
+    * {
+  	background-image: url('https://cutewallpaper.org/21/background-gif-html/8-HTML-Scripts-to-Add-Interactivity-to-Your-Websites.gif');
+  }
+  
+  
+	</style>
+</head>
+<body>    
+	<form action="process.php" method="GET">
+		<br>
+		<br>
+        
+		<label><strong>Full Name</strong></label>
+			<input type="text" name="Full name" required placeholder="Full Name" />
+	<br>
+	<br>
+		<label><strong>Username</strong></label>
+			<input type="text" name="Username" required placeholder="Username" />
+	<br>
+	<br>
+		<label><strong>Email</strong></label>
+			<input type="email" name="email" required placeholder="Email" />
+	<br>
+	<br>
+		<label><strong>Password</strong></label>
+			<input type="text" name="password" required placeholder="Password" />
+	<br>
+	<br>		
+		<label><strong>Confirm Password</strong></label>
+			<input type="text" name="password" required placeholder="Confirm Password" />
+	<br>
+	<br>
+	    <label><strong>Gender</strong></label>
+	        <select name="gender">
+	        <option value="Male">Male</option>
+	        <option value="Female">Female</option>
+	        <option value="Other">Other</option>
+	        </select>	
+	        	
+	
+       <br>
+       <br>
+
+       <button onclick="validation();"><a href="alone.html">Sign Up</a></button>
+
+       <script src="dist/sweetalert.min.js"></script>
+	<script type="text/javascript">
+		function validation()
+		{
+			alert ( "You are logging in to a private site!" )
+		}
+		</script>
+
+       <br>
+       <br>
+   </form>
+   <br>
+   <br>
+   <div class="text-center">&copy; Riya Chauhan 2021</div>
+   </body>
+   </html>
